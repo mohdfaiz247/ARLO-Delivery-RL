@@ -1,5 +1,7 @@
 # Cost-Aware Delivery Delay Mitigation Using Reinforcement Learning
 
+The complete implementation and saved experiments are available in this public repository. Download the [group project report](docs/ARLO_Report.pdf).
+
 **ARLO · Delivery Decision Lab** is a complete local academic project: a stochastic logistics simulator, NumPy Q-learning and SARSA, reproducible held-out experiments, and a nine-section Streamlit dashboard including repeated-seed research experiments.
 
 The research question is: **given an order’s known delay outlook, what sequence of feasible actions best balances delivery improvement against intervention expense?** The objective is to minimise expected cumulative intervention and delivery-delay cost.
