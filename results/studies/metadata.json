@@ -1,0 +1,41 @@
+{
+  "training_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "settings": [
+    {
+      "label": "reference_15k",
+      "episodes": 15000,
+      "learning_rate": 0.1
+    },
+    {
+      "label": "longer_60k",
+      "episodes": 60000,
+      "learning_rate": 0.1
+    },
+    {
+      "label": "longer_lower_alpha",
+      "episodes": 60000,
+      "learning_rate": 0.03
+    }
+  ],
+  "evaluation_orders": 1000,
+  "validation_seed": 82026,
+  "final_test_seed": 92026,
+  "sensitivity_seed": 102026,
+  "selection": "Lowest mean validation cost per algorithm; never select by final test or best seed",
+  "intervals": "Student-t across independent training seed means, conditional on shared orders; per-run MC intervals separate",
+  "economics": "Frozen selected policies, changed budgets/prices/penalties; no retraining under changed reward or prices",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "3.0.1",
+  "status": "complete",
+  "selected_settings": {
+    "q_learning": "longer_60k",
+    "sarsa": "longer_60k"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "training": {
+    "episodes": 15000,
+    "learning_rate": 0.1,
+    "gamma": 1.0,
+    "epsilon_start": 1.0,
+    "epsilon_min": 0.05,
+    "decay_fraction": 0.85,
+    "seed": 42
+  },
+  "evaluation_orders": 1000,
+  "evaluation_seed": 2026,
+  "training_scenario": "moderate",
+  "robustness_protocol": "Frozen moderate policies; matched orders and disturbances across scenarios",
+  "diagnostic": "Uniform integer outlook -3..8; independent seed",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "3.0.1"
+}

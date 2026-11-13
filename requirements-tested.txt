@@ -1,0 +1,7 @@
+# Direct dependency versions used for the delivered experiments and tests.
+# Install with: python -m pip install -r requirements-tested.txt
+numpy==2.3.5
+pandas==3.0.1
+streamlit==1.67.0
+plotly==6.9.0
+pytest==9.2.0

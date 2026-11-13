@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "constant_200k": {
+      "episodes": 200000,
+      "learning_rate": 0.03,
+      "visit_decay": 0.0
+    },
+    "visit_decay_200k": {
+      "episodes": 200000,
+      "learning_rate": 1.0,
+      "visit_decay": 0.6
+    }
+  },
+  "pilot_seeds": [
+    11,
+    22
+  ],
+  "confirmation_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "validation_seed": 82026,
+  "validation_orders": 2000,
+  "final_seed": 192026,
+  "final_orders": 5000,
+  "epsilon_min": 0.01,
+  "protocol": "Select each algorithm's setting using two-seed mean validation cost, then evaluate all five seeds once on fresh final orders",
+  "unchanged": "Environment dynamics, moderate assumptions, cost reward, order distribution, rule baseline and no-action baseline",
+  "status": "complete",
+  "selected_settings": {
+    "q_learning": "visit_decay_200k",
+    "sarsa": "visit_decay_200k"
+  }
+}
